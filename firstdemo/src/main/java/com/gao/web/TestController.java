@@ -16,6 +16,6 @@ public class TestController {
 
     @GetMapping("index/{name}")
     public String index(@PathVariable String name){
-        return "hi " + name + "!";
+        return "hi " + name + " !";
     }
 }
