@@ -10,6 +10,7 @@
 
     <modules>
         <module>firstdemo</module>
+        <module>springboot-mybatis</module>
     </modules>
 
 </project>

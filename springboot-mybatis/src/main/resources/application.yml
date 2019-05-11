@@ -1,0 +1,15 @@
+server:
+  port: 8890
+
+# DataSource Config
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.162.134:3306/easywork?useSSL=false&characterEncoding=UTF-8
+    username: root
+    password: Root
+#mybatis
+mybatis:
+  mapper-locations: classpath:/com/gao/**/*Mapper.xml
+  type-aliases-package: com.gao.entity
