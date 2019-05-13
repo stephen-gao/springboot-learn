@@ -11,6 +11,7 @@
     <modules>
         <module>firstdemo</module>
         <module>springboot-mybatis</module>
+        <module>springboot-redis</module>
     </modules>
 
 </project>
