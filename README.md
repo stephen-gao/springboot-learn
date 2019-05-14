@@ -1,3 +1,5 @@
+[![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
+[![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE_CN)
 # 猴子也能懂的springboot教程系列
 
 ## [猴子也能懂的springboot教程(一) | springboot入门](https://www.jianshu.com/p/1f7749e51d7b)
