@@ -32,14 +32,15 @@ public class UserServiceIml implements IUserService{
     @Value("${spring.redis.cache.user.key}")
     private String CACHE_USER_KEY;
 
+    //显示调用缓存
     @Override
     public User getUserByUsername(String username) {
         User user = userMapper.getUserByName(username);
-        cache.setHalfHour(CACHE_USER_KEY + user.getId(),user);//显示调用缓存
+        cache.setHalfHour(CACHE_USER_KEY + user.getId(),user);
         return user;
     }
     //使用注解测试cacheManager
-    @Cacheable(value = "user", key="#id")
+    @Cacheable(value = "user_id", key="#id")
     @Override
     public User getUserById(String id) {
         User user = userMapper.getUserById(id);

@@ -20,7 +20,7 @@ public class TestController {
     @Autowired
     private IUserService userService;
 
-    @GetMapping("index/{name}")
+    @GetMapping("name/{name}")
     public String index(@PathVariable String name){
         User user = userService.getUserByUsername(name);
         return "hi " + user.getUsername() + " your id is "+ user.getId();
@@ -29,6 +29,6 @@ public class TestController {
     @GetMapping("id/{id}")
     public String getUserById(@PathVariable String id){
         User user = userService.getUserById(id);
-        return "hi " + user.getUsername() + " your id is "+ user.getId();
+        return "hi " + user.getId() + " your name is "+ user.getUsername();
     }
 }
