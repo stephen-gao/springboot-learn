@@ -9,8 +9,12 @@
 - springboot-interceptor: springboot使用拦截器
 
 # 猴子也能懂的springboot教程系列
+## [猴子也能懂的springboot教程](https://www.jianshu.com/c/22d8080f97d9)
 
-## [猴子也能懂的springboot教程(一) | springboot入门](https://www.jianshu.com/p/1f7749e51d7b)
+- [猴子也能懂的springboot教程(一) - springboot入门](https://www.jianshu.com/p/1f7749e51d7b)
+- [猴子也能懂的springboot教程(二) - springboot整合Mybatis](https://www.jianshu.com/p/0b8d562ff0c5)
+- [猴子也能懂的springboot教程(三) - springboot整合Redis](https://www.jianshu.com/p/3100a8646193)
+- [猴子也能懂的springboot教程(四) - springboot使用拦截器](https://www.jianshu.com/p/332cc5448728)
 
   
   
