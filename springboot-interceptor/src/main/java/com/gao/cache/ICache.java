@@ -34,4 +34,10 @@ public interface ICache<V> {
      * 删除
      */
     public void remove(final String key);
+
+    /**
+     * 重置过期时间半小时
+     * @param key
+     */
+    void expireHalfHour(String key);
 }

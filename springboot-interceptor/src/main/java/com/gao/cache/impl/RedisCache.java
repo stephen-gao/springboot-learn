@@ -47,4 +47,9 @@ public class RedisCache<V> implements ICache<V>{
     public void remove(String key) {
         redisTemplate.delete(key);
     }
+
+    @Override
+    public void expireHalfHour(String key) {
+        redisTemplate.expire(key,HALF_HOUR_SECONDS, TimeUnit.SECONDS);
+    }
 }

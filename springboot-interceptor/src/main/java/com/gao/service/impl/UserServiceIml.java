@@ -12,6 +12,9 @@ import org.springframework.cache.annotation.Cacheable;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
+import java.util.UUID;
+
 /**
  * @Author gs
  * @Date created time 2019/5/11 17:54
@@ -36,7 +39,9 @@ public class UserServiceIml implements IUserService{
     @Override
     public User getUserByUsername(String username) {
         User user = userMapper.getUserByName(username);
-        cache.setHalfHour(CACHE_USER_KEY + user.getId(),user);
+        String token = UUID.randomUUID().toString();
+        user.setToken(token);
+        cache.setHalfHour(CACHE_USER_KEY + user.getToken(),user);
         return user;
     }
     //使用注解测试cacheManager
