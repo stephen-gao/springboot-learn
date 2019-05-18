@@ -2,11 +2,11 @@
 [![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE_CN)
 
 #项目结构
+
 - firstdemo: 第一个springboot项目
 - springboot-mybatis: springboot整合MyBatis
 - springboot-redis: springboot整合Redis
 - springboot-interceptor: springboot使用拦截器
-
 
 # 猴子也能懂的springboot教程系列
 
